@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { trigger, transition, style, animate } from '@angular/animations';
+import { trigger, transition, style, animate, keyframes } from '@angular/animations';
 
 @Component({
   selector: 'app-home',
@@ -23,6 +23,14 @@ import { trigger, transition, style, animate } from '@angular/animations';
       transition(':enter', [
         style({ opacity: 0, transform: 'translateX(50px)' }),
         animate('0.6s ease-out', style({ opacity: 1, transform: 'translateX(0)' }))
+      ])
+    ]),
+    trigger('nameAnimation', [
+      transition(':enter', [
+        style({ opacity: 0, transform: 'scale(0.8) translateY(-20px)' }),
+        animate('0.8s 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)', 
+          style({ opacity: 1, transform: 'scale(1) translateY(0)' })
+        )
       ])
     ])
   ]
