@@ -12,7 +12,7 @@ export class FooterComponent {
     { name: 'GitHub', url: 'https://github.com', icon: '🔗' },
     { name: 'LinkedIn', url: 'https://linkedin.com', icon: '🔗' },
     { name: 'Twitter', url: 'https://twitter.com', icon: '🔗' },
-    { name: 'Email', url: 'mailto:foram.upadhyay@example.com', icon: '📧' }
+    { name: 'Email', url: 'mailto:ayush.kashyap@example.com', icon: '📧' }
   ];
 }
 

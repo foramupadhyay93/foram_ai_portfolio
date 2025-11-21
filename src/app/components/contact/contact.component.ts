@@ -37,10 +37,10 @@ export class ContactComponent {
 
   get contactInfo() {
     return [
-      { icon: '📧', label: 'Email', value: 'foram.upadhyay@example.com', link: 'mailto:foram.upadhyay@example.com' },
+      { icon: '📧', label: 'Email', value: 'ayush.kashyap@example.com', link: 'mailto:ayush.kashyap@example.com' },
       { icon: '📱', label: 'Phone', value: '+1 (555) 123-4567', link: 'tel:+15551234567' },
       { icon: '📍', label: 'Location', value: 'Available Worldwide', link: null },
-      { icon: '💼', label: 'LinkedIn', value: 'linkedin.com/in/foram-upadhyay', link: 'https://linkedin.com' }
+      { icon: '💼', label: 'LinkedIn', value: 'linkedin.com/in/ayush-kashyap', link: 'https://linkedin.com' }
     ];
   }
 }
