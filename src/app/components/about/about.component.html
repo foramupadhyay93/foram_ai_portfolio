@@ -1,0 +1,44 @@
+<section id="about" class="section about-section" [@fadeInUp]>
+  <div class="container">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-content">
+      <div class="about-text about-item">
+        <p class="intro">
+          I'm a passionate Full Stack Developer with a strong foundation in modern web technologies.
+          I love building scalable applications that solve real-world problems and provide exceptional user experiences.
+        </p>
+        <p class="description">
+          With expertise in both frontend and backend development, I bring ideas to life through clean,
+          maintainable code and innovative design. My journey in web development has been driven by curiosity
+          and a commitment to continuous learning.
+        </p>
+        <p class="description">
+          When I'm not coding, you can find me exploring new technologies, contributing to open-source projects,
+          or sharing knowledge with the developer community.
+        </p>
+        <div class="stats">
+          <div class="stat-item">
+            <h3>50+</h3>
+            <p>Projects Completed</p>
+          </div>
+          <div class="stat-item">
+            <h3>3+</h3>
+            <p>Years Experience</p>
+          </div>
+          <div class="stat-item">
+            <h3>100%</h3>
+            <p>Client Satisfaction</p>
+          </div>
+        </div>
+      </div>
+      <div class="about-features">
+        <div class="feature-card about-item" *ngFor="let point of aboutPoints">
+          <div class="feature-icon">{{ point.icon }}</div>
+          <h3>{{ point.title }}</h3>
+          <p>{{ point.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

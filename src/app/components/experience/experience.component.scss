@@ -1,0 +1,132 @@
+.experience-section {
+  background: var(--dark-bg);
+}
+
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-left: 2rem;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, var(--primary-color), var(--secondary-color));
+  }
+  
+  @media (max-width: 768px) {
+    padding-left: 1.5rem;
+    
+    &::before {
+      left: 10px;
+    }
+  }
+}
+
+.experience-item {
+  position: relative;
+  margin-bottom: 3rem;
+  
+  .timeline-marker {
+    position: absolute;
+    left: -2.5rem;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--gradient-1);
+    border: 4px solid var(--dark-bg);
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.2);
+    
+    @media (max-width: 768px) {
+      left: -1.75rem;
+      width: 16px;
+      height: 16px;
+    }
+  }
+  
+  .experience-content {
+    background: var(--dark-surface);
+    padding: 2rem;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    
+    &:hover {
+      transform: translateX(10px);
+      border-color: var(--primary-color);
+      box-shadow: 0 10px 30px rgba(99, 102, 241, 0.2);
+    }
+    
+    .experience-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+      gap: 1rem;
+      
+      h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--light-text);
+        margin-bottom: 0.5rem;
+      }
+      
+      .company {
+        color: var(--primary-color);
+        font-weight: 500;
+        font-size: 1.1rem;
+      }
+      
+      .experience-meta {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 0.25rem;
+        
+        .period {
+          color: var(--light-text);
+          font-weight: 600;
+          font-size: 0.95rem;
+        }
+        
+        .location {
+          color: var(--gray-text);
+          font-size: 0.85rem;
+        }
+      }
+    }
+    
+    .experience-description {
+      color: var(--gray-text);
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+    
+    .achievements {
+      list-style: none;
+      padding: 0;
+      
+      li {
+        color: var(--gray-text);
+        margin-bottom: 0.5rem;
+        padding-left: 1.5rem;
+        position: relative;
+        
+        &::before {
+          content: '✓';
+          position: absolute;
+          left: 0;
+          color: var(--primary-color);
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+

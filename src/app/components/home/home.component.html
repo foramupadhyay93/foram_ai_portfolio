@@ -1,0 +1,43 @@
+<section id="home" class="home-section" [@fadeIn]>
+  <div class="container">
+    <div class="home-content">
+      <div class="home-text" [@slideInLeft]>
+        <p class="greeting">Hello, I'm</p>
+        <h1 class="name">Foram Upadhyay</h1>
+        <h2 class="title">
+          <span class="typed-text">{{ typedText }}</span>
+          <span class="cursor">|</span>
+        </h2>
+        <p class="description">
+          Passionate about creating innovative web solutions and delivering exceptional user experiences.
+          I transform ideas into reality through clean code and creative design.
+        </p>
+        <div class="cta-buttons">
+          <a (click)="scrollToSection('projects')" class="btn btn-primary">View My Work</a>
+          <a (click)="scrollToSection('contact')" class="btn btn-outline">Get In Touch</a>
+        </div>
+        <div class="social-links">
+          <a href="https://linkedin.com" target="_blank" class="social-link">LinkedIn</a>
+          <a href="https://github.com" target="_blank" class="social-link">GitHub</a>
+          <a href="https://twitter.com" target="_blank" class="social-link">Twitter</a>
+        </div>
+      </div>
+      <div class="home-image" [@slideInRight]>
+        <div class="image-wrapper">
+          <div class="gradient-orb orb-1"></div>
+          <div class="gradient-orb orb-2"></div>
+          <div class="gradient-orb orb-3"></div>
+          <div class="profile-placeholder">
+            <span>FU</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <div class="mouse">
+      <div class="wheel"></div>
+    </div>
+  </div>
+</section>
+

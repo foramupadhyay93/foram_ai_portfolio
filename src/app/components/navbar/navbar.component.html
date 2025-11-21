@@ -1,1 +1,26 @@
-<p>navbar works!</p>
+<nav class="navbar" [class.scrolled]="isScrolled">
+  <div class="container">
+    <div class="nav-wrapper">
+      <a routerLink="/" class="logo">
+        <span class="logo-text">FU</span>
+        <span class="logo-name">Foram Upadhyay</span>
+      </a>
+      
+      <ul class="nav-menu" [class.active]="isMobileMenuOpen">
+        <li><a (click)="scrollToSection('home')" routerLink="/">Home</a></li>
+        <li><a (click)="scrollToSection('about')" routerLink="/about">About</a></li>
+        <li><a (click)="scrollToSection('skills')" routerLink="/skills">Skills</a></li>
+        <li><a (click)="scrollToSection('projects')" routerLink="/projects">Projects</a></li>
+        <li><a (click)="scrollToSection('experience')" routerLink="/experience">Experience</a></li>
+        <li><a (click)="scrollToSection('contact')" routerLink="/contact">Contact</a></li>
+      </ul>
+      
+      <button class="mobile-toggle" (click)="toggleMobileMenu()" [class.active]="isMobileMenuOpen">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
